@@ -1,12 +1,18 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Hero } from '~/components/hero/hero';
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Nike" },
+    { name: "description", content: "Nike" },
   ];
 };
 
 export default function Index() {
-  return <div style={{ color: 'black' }}></div>;
+  return (
+    <main>
+      <Hero />
+      {/* Other content */}
+    </main>
+  );
 }

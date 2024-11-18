@@ -2,4 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Futura-Bold';
+  src: url('/fonts/Futura-Bold.woff2') format('woff2'),
+       url('/fonts/Futura-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Add any custom styles here */
+
+/* Add these styles if not already present */
+@layer utilities {
+  .h-screen {
+    height: 100vh;
+    height: 100dvh;
+  }
+}
